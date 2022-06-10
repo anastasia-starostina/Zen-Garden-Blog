@@ -1,0 +1,49 @@
+.container {
+  padding: 1em;
+}
+
+.header {
+  padding: 1em 5em;
+}
+
+.divider {
+  width: 1em;
+  margin: 0.5em 0 0 0;
+  border-color: red;
+  border-style: solid;
+}
+
+.title {
+  margin-bottom: 0.25em;
+}
+
+.author {
+  margin: 0;
+  font-style: italic;
+}
+
+.imageContainer {
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+}
+
+.caption {
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+.date {
+  font-size: 0.5em;
+  font-weight: 300;
+}
+
+.body {
+  padding: 1em 5em;
+  margin: 0;
+}
