@@ -17,7 +17,12 @@ h2 {
     background-color: linen;
     border: 1px solid #34623F;
     max-width: 800px;
+    text-align: center;
     margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .header {

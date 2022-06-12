@@ -3,7 +3,7 @@ import './Comment.css';
 
 
 const comment = {
-  author: 'Anastasia St Ho',
+  author: 'Anastasia S.',
   content: 'Hello, great post',
   initals: ''
 }

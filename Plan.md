@@ -2,7 +2,7 @@
 0. Export default all the components except App - ALREADY DONE ✅
 
 1. Create a BlogPost component ✅
-
+ - create BlogPost.css and style it ✅
  Props:
 
 blog which should be an object with the following shape:
@@ -32,6 +32,7 @@ blog which should be an object with the following shape:
 }
 
 2. Comment component - ✅
+- create Comment.css and style it ✅
 Props:
 
 author which should be a string (e.g. "Ben Lee")

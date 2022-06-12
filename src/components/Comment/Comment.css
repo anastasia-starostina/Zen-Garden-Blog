@@ -7,11 +7,19 @@
 .Comment {
  color: #46351D;
  padding: 20px;
+ border: 1px solid #34623F;
+ width: 800px;
  font-family: 'Libre Franklin', sans-serif;
  font-size: 14px;
  display: flex;
  flex-direction: column;
- 
+ text-align: left;
+ margin: 0 auto;
+ border-radius: 25px;
+ background-color: linen;
+ display: flex;
+ flex-direction: column;
+ align-self: center;
 }
 
 .initals-name {

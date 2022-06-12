@@ -16,9 +16,13 @@ code {
 }
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 
-  margin: 0 auto;
+
 }
 
+.App > div {
+  margin: 6px; /* Adding space between blogpost and comments */
+}
 
