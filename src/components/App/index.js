@@ -1,5 +1,11 @@
+import BlogPost from "../BlogPost";
+
 function App() {
-  return null;
+  return (
+    <div className="App">
+      <BlogPost/>
+    </div>
+  )
 }
 
 export default App;
