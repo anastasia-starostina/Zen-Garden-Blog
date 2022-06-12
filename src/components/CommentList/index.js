@@ -1,20 +1,12 @@
 import React from 'react';
+import Comment from '../Comment';
+import { blog, comments } from '../../data/blogs';
 
-const commentArray = [
-  {
-    id: "kskBC5HZ8qgNQUiW6If6q",
-    author: "Billy Bootcamper",
-    content: "Hello, great post",
-  },
-  {
-    id: "jFyGAKz1VsGputO1gV8xa",
-    author: "Chris Meah",
-    content: "Many thank yous",
-  },
-]
 
-function CommentList() {
-  return null;
-}
+function CommentList () {
+   const foundComments = comments.map((comment) => (
+        <ul key = {blog.id}></ul>
+    ))
+return foundComments}
 
 export default CommentList;

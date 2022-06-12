@@ -14,3 +14,18 @@ export const blog = {
     "https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   imageAlt: "A couple of coders.",
 };
+
+export const comments = [
+  
+
+  {
+    id: "kskBC5HZ8qgNQUiW6If6q",
+    author: "Billy Bootcamper",
+    content: "Hello, great post",
+  },
+  {
+    id: "jFyGAKz1VsGputO1gV8xa",
+    author: "Chris Meah",
+    content: "Many thank yous",
+  },
+]
