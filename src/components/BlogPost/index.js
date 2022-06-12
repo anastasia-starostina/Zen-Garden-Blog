@@ -1,4 +1,5 @@
 import React from 'react';
+import './BlogPost.css'
 
 //Example of a blog post
 const blog = {
@@ -13,13 +14,17 @@ const blog = {
 //Exporting the function and passing object keys in JSX
 export default function BlogPost() {
   return (
-    <>
-      <h1>{BlogPost.title}</h1>
-      <h2>{blog.author}</h2>
-      <p>{blog.datePosted}</p>
+    <div className = 'blogpost'>
+     <header className='header'>
+      <h1 className='title'><i>{blog.title}</i></h1>
+      <h2 className ='article-author'>By {blog.author}</h2>
+      <p className='date-posted'>{blog.datePosted}</p>
+      </header>
+      <article className ='article'>
       <p>{blog.content}</p>
-      <img classname='picture' src={blog.imageSrc}
+      <img classname='picture' src={blog.imageSrc} width ='600px'
       alt={'Photo of' + blog.title} />
-    </>
+      </article>
+    </div>
   )
 };

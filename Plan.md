@@ -1,7 +1,7 @@
 ---------PLAN-----------
-0. Export default all the components except App - ALREADY DONE
+0. Export default all the components except App - ALREADY DONE ✅
 
-1. Create a BlogPost component with 
+1. Create a BlogPost component ✅
 
  Props:
 
@@ -31,7 +31,7 @@ blog which should be an object with the following shape:
     Loop `,
 }
 
-2. Comment component -
+2. Comment component - ✅
 Props:
 
 author which should be a string (e.g. "Ben Lee")

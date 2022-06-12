@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+.initials {
+ background-color: #A6A867;
+ border-radius: 50%;
+ padding: 4px
+}
+.Comment {
+ color: #46351D;
+ padding: 20px;
+ font-family: 'Libre Franklin', sans-serif;
+ font-size: 14px;
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+.initals-name {
+display: flex;
+flex-direction: row;
+}
+
+.comment-text {
+
+}
