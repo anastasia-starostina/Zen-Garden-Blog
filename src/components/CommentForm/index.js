@@ -1,13 +1,30 @@
 import { useState } from "react";
 
-function CommentForm() {
-  const [newComment, setComment] = useState('');
+function CommentForm({onSubmit}) {
+  const [author, setAuthor] = useState('Anon')
+  const [content, setContent] = useState('')
 
-  function handleChange(e) {
-    setComment(e.target.value)
+  function handleAuthorChange(e) {
+    setAuthor(e.target.value)
   }
-
-  return null;
+  function handleContentChange(e){
+    setContent(e.target.value)
+  }
+  function handleClick(){
+    if (content != ''){
+      onSubmit(author, content)
+      setContent('')
+    }
+  }
+return (
+  <form>
+    <label>Author</label>
+    <input type='text' onChange={handleAuthorChange} value={author} id='author'></input><br/>
+    <label>Comment</label>
+    <input type='text' onChange={handleContentChange} value={content} id='comment'></input><br/>
+    <button type='button' onClick={handleClick}>Submit</button>
+  </form>
+)
 }
 
 export default CommentForm;

@@ -22,7 +22,7 @@ export default function BlogPost() {
       </header>
       <article className ='article'>
       <p>{blog.content}</p>
-      <img classname='picture' src={blog.imageSrc} width ='600px'
+      <img className='picture' src={blog.imageSrc} width ='600px'
       alt={'Photo of' + blog.title} />
       </article>
     </div>
