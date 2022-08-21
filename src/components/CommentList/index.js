@@ -1,6 +1,5 @@
 import React from "react";
 import Comment from "../Comment";
-import { blog, comments } from "../../data/blogs";
 
 function CommentList({ comments }) {
   return (
