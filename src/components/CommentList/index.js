@@ -1,16 +1,19 @@
-import React from 'react';
-import Comment from '../Comment';
-import { blog, comments } from '../../data/blogs';
+import React from "react";
+import Comment from "../Comment";
+import { blog, comments } from "../../data/blogs";
 
-
-function CommentList ({commentArray}) {
-    function createComment (comment) {
-        return <Comment author={comment.author} content={comment.content} key={comment.id}/>
-          }
+function CommentList({ comments }) {
+  return (
+    <section>
+      {comments.map((comment) => {
         return (
-            commentArray.map(createComment)
-        )
-
+          <artcile key={comment.id}>
+            <Comment author={comment.author} comment={comment.comment} />
+          </artcile>
+        );
+      })}
+    </section>
+  );
 }
 
 export default CommentList;
