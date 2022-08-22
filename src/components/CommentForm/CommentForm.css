@@ -1,0 +1,23 @@
+/* form {
+display: flex;
+flex-direction:column;
+align-items: center;
+} */
+
+.comment-text {
+ color: #46351D;
+ padding: 20px;
+ width: 800px;
+ font-family: 'Libre Franklin', sans-serif;
+ font-size: 14px;
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ border-radius: 25px;
+ background-color: 
+
+}
+
+.comment-form {
+    background-color: red;;
+}

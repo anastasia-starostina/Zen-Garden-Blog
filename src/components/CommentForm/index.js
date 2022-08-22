@@ -1,35 +1,46 @@
 import { useState } from "react";
+import './CommentForm.css';
 
-function CommentForm() {
+function CommentForm({ handleSubmit }) {
   const [author, setAuthor] = useState("Anon");
   const [comment, setComment] = useState("");
 
-  const handleSubmit = () => {
-    setComment("");
+  const onSubmit = (event) => {
+    event.preventDefault();
+    handleSubmit(author, comment);
   };
 
-  return (
-    <form>
-      <label>Author</label>
-      <input
-        type="text"
-        onChange={(event) => setAuthor(event.target.value)}
-        value={author}
-        id="author"
-      ></input>
+  const handleAuthorInput = (event) => {
+    setAuthor(event.target.value);
+  };
 
-      <br />
-      <label>Comment</label>
-      <input
-        type="text"
-        onChange={(event) => setComment(event.target.value)}
-        value={comment}
-        id="comment"
-      ></input>
-      <br />
-      <button type="button" onClick={() => handleSubmit()}>
-        Submit
-      </button>
+  const handleCommentTextArea = (event) => {
+    setComment(event.target.value);
+  };
+
+
+  return (
+    <form onSubmit={onSubmit}>
+        <div className="comment-text">
+        <label htmlFor="name-input"></label>
+        <input
+          value={author}
+          onChange={handleAuthorInput}
+          className="comment-text"
+          type="text"
+          id="name-input"
+        />
+      </div>
+      <div className="comment-form">
+        <textarea
+          value={comment}
+          onChange={handleCommentTextArea}
+          className="comment-text"
+          placeholder="Write something..."
+        />
+      </div>
+    
+      <button className="btn btn-primary">Submit</button>
     </form>
   );
 }
