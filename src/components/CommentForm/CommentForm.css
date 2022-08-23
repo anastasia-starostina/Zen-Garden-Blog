@@ -1,21 +1,52 @@
-/* form {
-display: flex;
-flex-direction:column;
-align-items: center;
-} */
-
-.comment-text {
- color: #46351D;
- padding: 20px;
- width: 800px;
- font-family: 'Libre Franklin', sans-serif;
- font-size: 14px;
- display: flex;
- flex-direction: column;
- text-align: left;
-
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 65vh;
+  height: 20vh;
+  align-self: center;
+  border-radius: 25px;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  display: flex;
+  background-color: linen;
+  color: #46351d;
+  border: 1px solid #34623f;
+  margin-top: 7px;
 }
 
-.comment-form {
-    background-color: red;;
+.comment-text {
+  color: #46351d;
+  padding: 20px;
+  width: 50vh;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.author {
+  margin-top: 10px;
+  width: 20vh;
+  border: 1px solid #34623f;
+  border-radius: 4px;
+  text-align: left;
+}
+
+button {
+    margin-bottom: 3px;
+    border-radius: 3px;
+   
+}
+
+button:hover {
+background-color: #34623f;
+color: linen;
+}
+
+input {
+    color: #46351d;
 }

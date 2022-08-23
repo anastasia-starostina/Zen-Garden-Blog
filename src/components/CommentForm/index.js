@@ -2,7 +2,7 @@ import { useState } from "react";
 import './CommentForm.css';
 
 function CommentForm({ handleSubmit }) {
-  const [author, setAuthor] = useState("Anon");
+  const [author, setAuthor] = useState("Anonymous User");
   const [comment, setComment] = useState("");
 
   const onSubmit = (event) => {
@@ -26,12 +26,12 @@ function CommentForm({ handleSubmit }) {
 
   return (
     <form onSubmit={onSubmit}>
-        <div className="comment-text">
+        <div className="author-text">
         <label htmlFor="name-input"></label>
         <input
           value={author}
           onChange={handleAuthorInput}
-          className="comment-text"
+          className="author"
           type="text"
           id="name-input"
         />

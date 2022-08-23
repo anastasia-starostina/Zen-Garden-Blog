@@ -2,7 +2,7 @@ import BlogPost from "../BlogPost";
 import Comment from "../Comment";
 import CommentList from "../CommentList";
 import CommentForm from "../CommentForm";
-import { blog } from "../../data/blogs.js";
+import { blog, comments } from "../../data/blogs.js";
 import React, { Component } from "react";
 
 //OLDER SOLUTION - FUNCTIONAL COMPONENTS
@@ -21,7 +21,7 @@ import React, { Component } from "react";
 //     },
 //   ]);
 
-//UTILIZING CLASS COMPONENTS
+//NEW SOLUTION - UTILIZING CLASS COMPONENTS
 class App extends Component {
   state = {
     comments: [],
@@ -35,7 +35,7 @@ class App extends Component {
     return (
       <div className="App">
         <BlogPost blog={blog} />
-        <Comment author={blog.author} content={blog.content} />
+        <Comment author={blog.author} comment={blog.content} />
         <CommentList comments={this.state.comments} />
         <CommentForm handleSubmit={this.handleSubmit} />
       </div>

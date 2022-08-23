@@ -1,7 +1,9 @@
 import React from "react";
 import "./Comment.css";
 
+//Getting Author's Initials
 function Comment({ comment, author }) {
+  
   const inititals = author
     .split(" ")
     .map((name) => name[0])
