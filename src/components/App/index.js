@@ -4,7 +4,6 @@ import CommentList from "../CommentList";
 import CommentForm from "../CommentForm";
 import { blog } from "../../data/blogs.js";
 import React, { Component } from "react";
-import { useState } from "react";
 
 //OLDER SOLUTION - FUNCTIONAL COMPONENTS
 

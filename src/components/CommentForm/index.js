@@ -10,12 +10,17 @@ function CommentForm({ handleSubmit }) {
     handleSubmit(author, comment);
   };
 
+   const isNotFilled = () => {
+     return !(author && comment);
+   };
+
   const handleAuthorInput = (event) => {
     setAuthor(event.target.value);
   };
 
   const handleCommentTextArea = (event) => {
     setComment(event.target.value);
+    console.log(comment)
   };
 
 
@@ -40,7 +45,7 @@ function CommentForm({ handleSubmit }) {
         />
       </div>
     
-      <button className="btn btn-primary">Submit</button>
+      <button disabled={isNotFilled()} className="btn btn-primary">Submit</button>
     </form>
   );
 }
