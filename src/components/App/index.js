@@ -2,7 +2,7 @@ import BlogPost from "../BlogPost";
 import Comment from "../Comment";
 import CommentList from "../CommentList";
 import CommentForm from "../CommentForm";
-import { blog, comments } from "../../data/blogs.js";
+import { blog } from "../../data/blogs.js";
 import React, { Component } from "react";
 
 //OLDER SOLUTION - FUNCTIONAL COMPONENTS
